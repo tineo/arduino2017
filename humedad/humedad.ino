@@ -42,11 +42,11 @@ void loop()
 
 
     //LED de TEMP
-    if(temp > 22){
+    if(temp > 25){
       digitalWrite(LED_RED, HIGH);   
       delay(1000);                   
       digitalWrite(LED_RED, LOW);     
-    }else if(temp <=22 && temp >= 19.5){
+    }else if(temp <=25 && temp >= 20){
       digitalWrite(LED_GREEN, HIGH);   
       delay(1000);                     
       digitalWrite(LED_GREEN, LOW);
@@ -57,7 +57,7 @@ void loop()
     }
 
     //LED de HUM
-    if(hum >= 76  && hum <=81.5){
+    if(hum >= 66  && hum <=81.5){
       digitalWrite(LED_GREEN2, HIGH);   
       delay(500);                     
       digitalWrite(LED_GREEN2, LOW);
